@@ -18,6 +18,7 @@
 		685F08B7923D0AB1CF9F52FE /* String+Decoded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F09427B93CB714C6B8292 /* String+Decoded.swift */; };
 		685F0B9B0BD98FB90008105D /* SampleEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F0FB7C287C1830B73F6DE /* SampleEvent.swift */; };
 		685F0EB9D5129C0A77C61B3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 685F0558CEE0F36DA837AE7D /* Assets.xcassets */; };
+		685F0FA54E39DE5556A8AB6C /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F00B6CA37848BCD652301 /* Event.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		685F00B6CA37848BCD652301 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		685F01F0866603931E7C0CEB /* OnThisDayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnThisDayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		685F02C82D6C30A941EF3041 /* OnThisDayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnThisDayTests.swift; sourceTree = "<group>"; };
 		685F0558CEE0F36DA837AE7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				685F080B860BE352E8E7CCA0 /* Day.swift */,
+				685F00B6CA37848BCD652301 /* Event.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				685F08B7923D0AB1CF9F52FE /* String+Decoded.swift in Sources */,
 				685F0B9B0BD98FB90008105D /* SampleEvent.swift in Sources */,
 				685F06ACCE1DD5DE56187926 /* Day.swift in Sources */,
+				685F0FA54E39DE5556A8AB6C /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
