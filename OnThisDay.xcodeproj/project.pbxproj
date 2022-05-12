@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		685F0165C89C65F54586F24C /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F07D3EB8BE1B2A96A314B /* Networker.swift */; };
 		685F0239DC20562ACD7B0C2E /* OnThisDayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F02C82D6C30A941EF3041 /* OnThisDayTests.swift */; };
 		685F02501AF028D42530F335 /* OnThisDayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F0C1C768EFF46DAFC4271 /* OnThisDayUITestsLaunchTests.swift */; };
 		685F02C21F6B6B348F5505C3 /* OnThisDayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F08D0557AB57F51B186C9 /* OnThisDayUITests.swift */; };
@@ -40,6 +41,7 @@
 		685F06F02A2815752DBBA0BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		685F07077A1375623F8EE0F3 /* OnThisDay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OnThisDay.entitlements; sourceTree = "<group>"; };
 		685F075F59946781F919D380 /* OnThisDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnThisDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		685F07D3EB8BE1B2A96A314B /* Networker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networker.swift; sourceTree = "<group>"; };
 		685F08D0557AB57F51B186C9 /* OnThisDayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnThisDayUITests.swift; sourceTree = "<group>"; };
 		685F0A2DF167AD24EA68F4D7 /* OnThisDayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnThisDayApp.swift; sourceTree = "<group>"; };
 		685F0A3A5D5768A82530751A /* OnThisDayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnThisDayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +110,7 @@
 				685F002FA2EDEEC33E0BE147 /* Preview Content */,
 				685F0A2DF167AD24EA68F4D7 /* OnThisDayApp.swift */,
 				685F06F02A2815752DBBA0BA /* ContentView.swift */,
+				685F07D3EB8BE1B2A96A314B /* Networker.swift */,
 			);
 			path = OnThisDay;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			files = (
 				685F0B03FAC6B404D15C185F /* OnThisDayApp.swift in Sources */,
 				685F05CAFBC9633D792B88EA /* ContentView.swift in Sources */,
+				685F0165C89C65F54586F24C /* Networker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
