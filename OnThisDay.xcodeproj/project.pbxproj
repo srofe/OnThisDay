@@ -15,6 +15,7 @@
 		685F03902AD0D79C4069916F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 685F0AF0D156B1D0905730AF /* Preview Assets.xcassets */; };
 		685F05CAFBC9633D792B88EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F06F02A2815752DBBA0BA /* ContentView.swift */; };
 		685F08B7923D0AB1CF9F52FE /* String+Decoded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F09427B93CB714C6B8292 /* String+Decoded.swift */; };
+		685F0B9B0BD98FB90008105D /* SampleEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F0FB7C287C1830B73F6DE /* SampleEvent.swift */; };
 		685F0EB9D5129C0A77C61B3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 685F0558CEE0F36DA837AE7D /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		685F0A3A5D5768A82530751A /* OnThisDayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnThisDayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		685F0AF0D156B1D0905730AF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		685F0C1C768EFF46DAFC4271 /* OnThisDayUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnThisDayUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		685F0FB7C287C1830B73F6DE /* SampleEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleEvent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				685F0AF0D156B1D0905730AF /* Preview Assets.xcassets */,
+				685F0FB7C287C1830B73F6DE /* SampleEvent.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				685F0165C89C65F54586F24C /* Networker.swift in Sources */,
 				685F02EF0B16FB42F33CBCEE /* OnThisDayApp.swift in Sources */,
 				685F08B7923D0AB1CF9F52FE /* String+Decoded.swift in Sources */,
+				685F0B9B0BD98FB90008105D /* SampleEvent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
