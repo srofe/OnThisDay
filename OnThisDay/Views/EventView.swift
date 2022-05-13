@@ -13,12 +13,14 @@ struct EventView: View {
     var body: some View {
         HStack {
             VStack(alignment: .leading, spacing: 30) {
-                Text(event.year)
+                Label(event.year, systemImage: "calendar")
                     .font(.title)
-                Text(event.text)
+                    .foregroundColor(.green)
+                Label(event.text, systemImage: "info.circle")
                     .font(.title3)
                 VStack(alignment: .leading, spacing: 10) {
-                    Text("Related Links:")
+                    Label("Related Links:", systemImage: "link")
+                        .foregroundColor(.pink)
                     ForEach(event.links) { link in
                         Link(link.title, destination: link.url)
                             .onHover { inside in
