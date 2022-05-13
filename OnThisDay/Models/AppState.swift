@@ -96,7 +96,7 @@ class AppState: ObservableObject {
     var today: String {
         let (monthNum, dayNum) = currentMonthAndDay()
         let month = englishMonthNames[monthNum - 1]
-        return "\(month)\(dayNum)"
+        return "\(month) \(dayNum)"
     }
 
     var sortedDates: [String] {
