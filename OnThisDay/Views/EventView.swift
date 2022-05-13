@@ -16,7 +16,7 @@ struct EventView: View {
                 Label(event.year, systemImage: "calendar")
                     .font(.title)
                     .foregroundColor(.green)
-                Text(event.text)
+                Label(event.text, systemImage: "info.circle")
                     .font(.title3)
                 VStack(alignment: .leading, spacing: 10) {
                     Text("Related Links:")
