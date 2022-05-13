@@ -10,8 +10,17 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            Text("Fake sidebar")
+            Text("Fake details")
+        }
+                .frame(
+                        minWidth: 700,
+                        idealWidth: 1000,
+                        maxWidth: .infinity,
+                        minHeight: 400,
+                        idealHeight: 800,
+                        maxHeight: .infinity)
     }
 }
 
