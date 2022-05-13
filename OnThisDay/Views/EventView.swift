@@ -13,8 +13,9 @@ struct EventView: View {
     var body: some View {
         HStack {
             VStack(alignment: .leading, spacing: 30) {
-                Text(event.year)
+                Label(event.year, systemImage: "calendar")
                     .font(.title)
+                    .foregroundColor(.green)
                 Text(event.text)
                     .font(.title3)
                 VStack(alignment: .leading, spacing: 10) {
