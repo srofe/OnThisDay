@@ -120,14 +120,13 @@
 		685F02FDC90B78CFE5C8D0E7 /* OnThisDay */ = {
 			isa = PBXGroup;
 			children = (
+				685F0773377D6C2B39D0289B /* OnThisDayApp.swift */,
 				685F0558CEE0F36DA837AE7D /* Assets.xcassets */,
 				685F07077A1375623F8EE0F3 /* OnThisDay.entitlements */,
 				685F002FA2EDEEC33E0BE147 /* Preview Content */,
-				685F06F02A2815752DBBA0BA /* ContentView.swift */,
-				685F07D3EB8BE1B2A96A314B /* Networker.swift */,
+				F45E3339282E11F5005047C1 /* Views */,
 				685F0C12840F7CE9E9E17366 /* Utilities */,
 				685F05C3ED1B5C180526260F /* Models */,
-				685F0F390DD9FF6967D0821E /* SidebarView.swift */,
 			);
 			path = OnThisDay;
 			sourceTree = "<group>";
@@ -163,10 +162,19 @@
 		685F0C12840F7CE9E9E17366 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				685F0773377D6C2B39D0289B /* OnThisDayApp.swift */,
+				685F07D3EB8BE1B2A96A314B /* Networker.swift */,
 				685F09427B93CB714C6B8292 /* String+Decoded.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F45E3339282E11F5005047C1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				685F06F02A2815752DBBA0BA /* ContentView.swift */,
+				685F0F390DD9FF6967D0821E /* SidebarView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,11 +238,14 @@
 /* Begin PBXProject section */
 		685F0BFB85B8161D934889DF /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = 685F0F3D4FA3573959BA40BC /* Build configuration list for PBXProject "OnThisDay" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 685F02B44B18402C2DF3A4B0;
@@ -417,8 +428,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
@@ -549,6 +559,7 @@
 				685F01F01ABEDCB995C176F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		685F07B636637CC72197D588 /* Build configuration list for PBXNativeTarget "OnThisDay" */ = {
 			isa = XCConfigurationList;
@@ -557,6 +568,7 @@
 				685F0A55C6BEA255754FB81D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		685F0A531AE1DE5C39C9AF1A /* Build configuration list for PBXNativeTarget "OnThisDayTests" */ = {
 			isa = XCConfigurationList;
@@ -565,6 +577,7 @@
 				685F01B476ECF380C6A140D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		685F0F3D4FA3573959BA40BC /* Build configuration list for PBXProject "OnThisDay" */ = {
 			isa = XCConfigurationList;

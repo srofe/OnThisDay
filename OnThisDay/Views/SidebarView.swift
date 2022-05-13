@@ -11,9 +11,10 @@ struct SidebarView: View {
         List(selection: $selection) {
             Section("TODAY") {
                 ForEach(EventType.allCases, id: \.self) { type in
-                        Text(type.rawValue)
+                    Text(type.rawValue)
                 }
             }
         }
+        .listStyle(.sidebar)
     }
 }

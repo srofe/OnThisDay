@@ -16,13 +16,13 @@ struct ContentView: View {
             SidebarView(selection: $eventType)
             Text("Fake details")
         }
-                .frame(
-                        minWidth: 700,
-                        idealWidth: 1000,
-                        maxWidth: .infinity,
-                        minHeight: 400,
-                        idealHeight: 800,
-                        maxHeight: .infinity)
+        .frame(
+            minWidth: 700,
+            idealWidth: 1000,
+            maxWidth: .infinity,
+            minHeight: 400,
+            idealHeight: 800,
+            maxHeight: .infinity)
     }
 }
 
