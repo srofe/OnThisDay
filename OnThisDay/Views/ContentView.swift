@@ -14,6 +14,13 @@ struct ContentView: View {
     var events: [Event] {
         appState.dataFor(eventType: eventType)
     }
+    var windowTitle: String {
+        if let eventType = eventType {
+            return "On This Day - \(eventType.rawValue)"
+        } else {
+            return "On This Day"
+        }
+    }
 
     var body: some View {
         NavigationView {
@@ -27,6 +34,7 @@ struct ContentView: View {
             minHeight: 400,
             idealHeight: 800,
             maxHeight: .infinity)
+        .navigationTitle(windowTitle)
     }
 }
 
