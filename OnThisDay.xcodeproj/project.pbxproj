@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		685F0165C89C65F54586F24C /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F07D3EB8BE1B2A96A314B /* Networker.swift */; };
+		685F01F54250517DFE67588A /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F0F390DD9FF6967D0821E /* SidebarView.swift */; };
 		685F0239DC20562ACD7B0C2E /* OnThisDayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F02C82D6C30A941EF3041 /* OnThisDayTests.swift */; };
 		685F02501AF028D42530F335 /* OnThisDayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F0C1C768EFF46DAFC4271 /* OnThisDayUITestsLaunchTests.swift */; };
 		685F02C21F6B6B348F5505C3 /* OnThisDayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F08D0557AB57F51B186C9 /* OnThisDayUITests.swift */; };
@@ -58,6 +59,7 @@
 		685F0AF0D156B1D0905730AF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		685F0C1C768EFF46DAFC4271 /* OnThisDayUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnThisDayUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		685F0E33DC878D5DD0A994D2 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		685F0F390DD9FF6967D0821E /* SidebarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
 		685F0FB7C287C1830B73F6DE /* SampleEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleEvent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,6 +127,7 @@
 				685F07D3EB8BE1B2A96A314B /* Networker.swift */,
 				685F0C12840F7CE9E9E17366 /* Utilities */,
 				685F05C3ED1B5C180526260F /* Models */,
+				685F0F390DD9FF6967D0821E /* SidebarView.swift */,
 			);
 			path = OnThisDay;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				685F0FA54E39DE5556A8AB6C /* Event.swift in Sources */,
 				685F07993325C31B25F985A7 /* EventLink.swift in Sources */,
 				685F087BBE3ED175243B7EBC /* AppState.swift in Sources */,
+				685F01F54250517DFE67588A /* SidebarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
