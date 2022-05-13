@@ -22,6 +22,7 @@
 		685F0B9B0BD98FB90008105D /* SampleEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F0FB7C287C1830B73F6DE /* SampleEvent.swift */; };
 		685F0EB9D5129C0A77C61B3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 685F0558CEE0F36DA837AE7D /* Assets.xcassets */; };
 		685F0FA54E39DE5556A8AB6C /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F00B6CA37848BCD652301 /* Event.swift */; };
+		F45E333B282E12F2005047C1 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45E333A282E12F2005047C1 /* EventView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		685F0E33DC878D5DD0A994D2 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		685F0F390DD9FF6967D0821E /* SidebarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
 		685F0FB7C287C1830B73F6DE /* SampleEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleEvent.swift; sourceTree = "<group>"; };
+		F45E333A282E12F2005047C1 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 			children = (
 				685F06F02A2815752DBBA0BA /* ContentView.swift */,
 				685F0F390DD9FF6967D0821E /* SidebarView.swift */,
+				F45E333A282E12F2005047C1 /* EventView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 			files = (
 				685F05CAFBC9633D792B88EA /* ContentView.swift in Sources */,
 				685F0165C89C65F54586F24C /* Networker.swift in Sources */,
+				F45E333B282E12F2005047C1 /* EventView.swift in Sources */,
 				685F02EF0B16FB42F33CBCEE /* OnThisDayApp.swift in Sources */,
 				685F08B7923D0AB1CF9F52FE /* String+Decoded.swift in Sources */,
 				685F0B9B0BD98FB90008105D /* SampleEvent.swift in Sources */,
