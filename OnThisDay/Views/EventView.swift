@@ -19,7 +19,8 @@ struct EventView: View {
                 Label(event.text, systemImage: "info.circle")
                     .font(.title3)
                 VStack(alignment: .leading, spacing: 10) {
-                    Text("Related Links:")
+                    Label("Related Links:", systemImage: "link")
+                        .foregroundColor(.pink)
                     ForEach(event.links) { link in
                         Link(link.title, destination: link.url)
                             .onHover { inside in
