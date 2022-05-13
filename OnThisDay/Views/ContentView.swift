@@ -9,12 +9,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var appState: AppState
     @State private var eventType: EventType? = .events
+    var events: [Event] {
+        appState.dataFor(eventType: eventType)
+    }
 
     var body: some View {
         NavigationView {
             SidebarView(selection: $eventType)
-            Text("Fake details")
+            Text("\(events.count)")
         }
         .frame(
             minWidth: 700,
