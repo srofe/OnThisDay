@@ -17,6 +17,19 @@ struct EventView: View {
                     .font(.title)
                 Text(event.text)
                     .font(.title3)
+                VStack(alignment: .leading, spacing: 10) {
+                    Text("Related Links:")
+                    ForEach(event.links) { link in
+                        Link(link.title, destination: link.url)
+                            .onHover { inside in
+                                if inside {
+                                    NSCursor.pointingHand.push()
+                                } else {
+                                    NSCursor.pop()
+                                }
+                            }
+                    }
+                }
                 Spacer()
             }
             Spacer()
