@@ -9,6 +9,7 @@ import SwiftUI
 
 struct Menus: Commands {
     var body: some Commands {
-        EmptyCommands()
+        SidebarCommands()
+        ToolbarCommands()
     }
 }
