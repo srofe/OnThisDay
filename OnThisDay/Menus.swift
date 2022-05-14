@@ -18,6 +18,8 @@ struct Menus: Commands {
             }
             .keyboardShortcut("/", modifiers: .command)
         }
+
+        CommandMenu("Display") {}
     }
 
     private func showAPIWebSite() {
