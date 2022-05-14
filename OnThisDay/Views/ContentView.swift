@@ -35,6 +35,9 @@ struct ContentView: View {
             idealHeight: 800,
             maxHeight: .infinity)
         .navigationTitle(windowTitle)
+        .toolbar {
+            Toolbar()
+        }
     }
 }
 
