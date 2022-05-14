@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct Menus: Commands {
+    @AppStorage("showTotals") var showTotals = true
+
     var body: some Commands {
         SidebarCommands()
         ToolbarCommands()
@@ -19,7 +21,12 @@ struct Menus: Commands {
             .keyboardShortcut("/", modifiers: .command)
         }
 
-        CommandMenu("Display") {}
+        CommandMenu("Display") {
+            Toggle(isOn: $showTotals) {
+                Text("Show Totals")
+            }
+            .keyboardShortcut("t", modifiers: .command)
+        }
     }
 
     private func showAPIWebSite() {
