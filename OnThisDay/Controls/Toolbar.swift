@@ -8,11 +8,19 @@ struct Toolbar: ToolbarContent {
     var body: some ToolbarContent {
         ToolbarItem(placement:  .navigation) {
             Button {
-                // button action
+                toggleToolbar()
             } label: {
                 Image(systemName: "sidebar.left")
             }
-                    .help("Toggle Sidebar")
+            .help("Toggle Sidebar")
         }
+    }
+
+    func toggleToolbar() {
+        NSApp.keyWindow?
+            .contentViewController?
+            .tryToPerform(
+                #selector(NSSplitViewController.toggleSidebar(_:)),
+                with: nil)
     }
 }
