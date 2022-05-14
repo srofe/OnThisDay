@@ -25,6 +25,7 @@
 		F45E333B282E12F2005047C1 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45E333A282E12F2005047C1 /* EventView.swift */; };
 		F4EBCCC8282E8C71008A2F22 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EBCCC7282E8C71008A2F22 /* GridView.swift */; };
 		F4EBCCCA282F5B28008A2F22 /* Menus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EBCCC9282F5B28008A2F22 /* Menus.swift */; };
+		F4EBCCCC282F7D2D008A2F22 /* DisplayMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EBCCCB282F7D2D008A2F22 /* DisplayMode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		F45E333A282E12F2005047C1 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
 		F4EBCCC7282E8C71008A2F22 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		F4EBCCC9282F5B28008A2F22 /* Menus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menus.swift; sourceTree = "<group>"; };
+		F4EBCCCB282F7D2D008A2F22 /* DisplayMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayMode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 				685F00B6CA37848BCD652301 /* Event.swift */,
 				685F0124CA4739C498A49E99 /* EventLink.swift */,
 				685F0E33DC878D5DD0A994D2 /* AppState.swift */,
+				F4EBCCCB282F7D2D008A2F22 /* DisplayMode.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				685F05CAFBC9633D792B88EA /* ContentView.swift in Sources */,
+				F4EBCCCC282F7D2D008A2F22 /* DisplayMode.swift in Sources */,
 				685F0165C89C65F54586F24C /* Networker.swift in Sources */,
 				F45E333B282E12F2005047C1 /* EventView.swift in Sources */,
 				F4EBCCCA282F5B28008A2F22 /* Menus.swift in Sources */,
