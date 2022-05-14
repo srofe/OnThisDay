@@ -17,5 +17,8 @@ struct OnThisDayApp: App {
             ContentView()
                 .environmentObject(appState)
         }
+        .commands {
+            Menus()
+        }
     }
 }
