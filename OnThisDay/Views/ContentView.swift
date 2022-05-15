@@ -10,6 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject var appState: AppState
+    @AppStorage("showTotals") var showTotals = true
     @State private var eventType: EventType? = .events
     @State private var searchText = ""
     var events: [Event] {
@@ -28,8 +29,10 @@ struct ContentView: View {
             SidebarView(selection: $eventType)
             VStack {
                 GridView(gridData: events)
-                Text("Total items: \(events.count)")
-                    .padding(.bottom, 8)
+                if showTotals {
+                    Text("Total items: \(events.count)")
+                        .padding(.bottom, 8)
+                }
             }
         }
         .frame(
