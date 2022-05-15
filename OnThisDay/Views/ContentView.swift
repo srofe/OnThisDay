@@ -26,7 +26,8 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             SidebarView(selection: $eventType)
-            GridView(gridData: events)
+//            GridView(gridData: events)
+            TableView(tableData: events)
         }
         .frame(
             minWidth: 700,
