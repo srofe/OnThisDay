@@ -4,13 +4,16 @@
 
 import SwiftUI
 
-struct Toolbar: ToolbarContent {
-    var body: some ToolbarContent {
-        ToolbarItem(placement:  .navigation) {
+struct Toolbar: CustomizableToolbarContent {
+    var body: some CustomizableToolbarContent {
+        ToolbarItem(
+            id: "toogleSidebar",
+            placement:  .navigation,
+            showsByDefault: true) {
             Button {
                 toggleToolbar()
             } label: {
-                Image(systemName: "sidebar.left")
+                Label("Toggle Sidebar", systemImage: "sidebar.left")
             }
             .help("Toggle Sidebar")
         }

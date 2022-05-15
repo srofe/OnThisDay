@@ -36,7 +36,7 @@ struct ContentView: View {
             idealHeight: 800,
             maxHeight: .infinity)
         .navigationTitle(windowTitle)
-        .toolbar {
+        .toolbar(id: "mainToolbar") {
             Toolbar()
         }
             .searchable(text: $searchText)
