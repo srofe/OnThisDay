@@ -23,12 +23,6 @@ struct DayPicker: View {
         VStack {
             Text("Select a Date")
             HStack {
-                Picker("", selection: $month) {
-                    ForEach(appState.englishMonthNames, id: \.self) { month in
-                        Text(month)
-                    }
-                }
-                .pickerStyle(.menu)
                 Picker("", selection: $day) {
                     ForEach(1 ... maxDays, id: \.self) { day in
                         Text("\(day)")
@@ -37,6 +31,12 @@ struct DayPicker: View {
                 .pickerStyle(.menu)
                 .frame(maxWidth: 60)
                 .padding(.trailing, 10)
+                Picker("", selection: $month) {
+                    ForEach(appState.englishMonthNames, id: \.self) { month in
+                        Text(month)
+                    }
+                }
+                .pickerStyle(.menu)
             }
             // Button goes here
         }
