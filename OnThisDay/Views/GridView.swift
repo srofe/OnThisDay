@@ -31,7 +31,7 @@ struct GridView: View {
             }
             .padding(.vertical)
             if showTotals {
-                Text("Total items: \(gridData.count)")
+                Text("\(gridData.count) \(gridData.count == 1 ? "entry" : "entries")")
                     .padding(.bottom, 8)
             }
         }
