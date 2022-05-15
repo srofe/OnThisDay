@@ -26,6 +26,7 @@
 		685F0FA54E39DE5556A8AB6C /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685F00B6CA37848BCD652301 /* Event.swift */; };
 		F45E333B282E12F2005047C1 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45E333A282E12F2005047C1 /* EventView.swift */; };
 		F4C1137B2830D247005A24A4 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C1137A2830D247005A24A4 /* TableView.swift */; };
+		F4C1137F2830E369005A24A4 /* DayPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C1137E2830E369005A24A4 /* DayPicker.swift */; };
 		F4EBCCC8282E8C71008A2F22 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EBCCC7282E8C71008A2F22 /* GridView.swift */; };
 		F4EBCCCC282F7D2D008A2F22 /* DisplayMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EBCCCB282F7D2D008A2F22 /* DisplayMode.swift */; };
 /* End PBXBuildFile section */
@@ -71,6 +72,7 @@
 		685F0FB7C287C1830B73F6DE /* SampleEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleEvent.swift; sourceTree = "<group>"; };
 		F45E333A282E12F2005047C1 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
 		F4C1137A2830D247005A24A4 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		F4C1137E2830E369005A24A4 /* DayPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayPicker.swift; sourceTree = "<group>"; };
 		F4EBCCC7282E8C71008A2F22 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		F4EBCCCB282F7D2D008A2F22 /* DisplayMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayMode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -199,6 +201,7 @@
 				F45E333A282E12F2005047C1 /* EventView.swift */,
 				F4EBCCC7282E8C71008A2F22 /* GridView.swift */,
 				F4C1137A2830D247005A24A4 /* TableView.swift */,
+				F4C1137E2830E369005A24A4 /* DayPicker.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4C1137F2830E369005A24A4 /* DayPicker.swift in Sources */,
 				685F05CAFBC9633D792B88EA /* ContentView.swift in Sources */,
 				F4EBCCCC282F7D2D008A2F22 /* DisplayMode.swift in Sources */,
 				685F0165C89C65F54586F24C /* Networker.swift in Sources */,
