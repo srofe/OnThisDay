@@ -24,7 +24,8 @@ struct ContentView: View {
     }
     var windowTitle: String {
         if let eventType = eventType {
-            return "On This Day - \(eventType.rawValue)"
+            let day = selectedDate ?? "TODAY"
+            return "On This Day - \(eventType.rawValue) - \(day)"
         } else {
             return "On This Day"
         }
