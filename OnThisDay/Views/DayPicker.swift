@@ -38,9 +38,26 @@ struct DayPicker: View {
                 }
                 .pickerStyle(.menu)
             }
-            // Button goes here
+            if appState.isLoading {
+                ProgressView()
+                    .frame(height: 30)
+            } else {
+                Button("Get Events") {
+                    Task {
+                        await getNewEvents()
+                    }
+                }
+                .buttonStyle(.borderedProminent)
+                .controlSize(.large)
+            }
         }
         .padding()
+    }
+
+    func getNewEvents() async {
+        let monthIndex = appState.englishMonthNames.firstIndex(of: month) ?? 0
+        let monthNumber = monthIndex + 1
+        await appState.getDataFor(month: monthNumber, day: day)
     }
 }
 
