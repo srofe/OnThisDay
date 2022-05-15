@@ -14,15 +14,33 @@ struct TableView: View {
     var sortedTableData: [Event] {
         tableData.sorted(using: sortOrder)
     }
+    var selectedEvent: Event? {
+        guard let selectedEventID = selectedEventID else { return nil }
+        let event = tableData.first { event in
+            event.id == selectedEventID
+        }
+        return event
+    }
 
     var body: some View {
-        Table(sortedTableData, selection: $selectedEventID, sortOrder: $sortOrder) {
-            TableColumn("Year", value: \.year) { item in
-                Text(item.year)
+        HStack {
+            Table(sortedTableData, selection: $selectedEventID, sortOrder: $sortOrder) {
+                TableColumn("Year", value: \.year) { item in
+                    Text(item.year)
+                }
+                .width(min: 50, ideal: 60, max: 100)
+                TableColumn("Title", value: \.text) { item in
+                    Text(item.text)
+                }
             }
-            .width(min: 50, ideal: 60, max: 100)
-            TableColumn("Title", value: \.text) { item in
-                Text(item.text)
+            if let selectedEvent = selectedEvent {
+                EventView(event: selectedEvent)
+                    .frame(width: 250)
+            } else {
+                Text("Select an event for more details...")
+                    .font(.title)
+                    .padding()
+                    .frame(width: 250)
             }
         }
     }
