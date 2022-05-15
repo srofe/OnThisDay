@@ -30,6 +30,7 @@ struct SidebarView: View {
                             }
                         }
                         .controlSize(.large)
+                        .modifier(DateButtonViewModifier(selected: date == selectedDate))
                     }
                 }
             }
@@ -38,5 +39,18 @@ struct SidebarView: View {
             DayPicker()
         }
         .frame(minWidth: 220)
+    }
+}
+
+struct DateButtonViewModifier: ViewModifier {
+    var selected: Bool
+
+    func body(content: Content) -> some View {
+        if selected {
+            content
+                .buttonStyle(.borderedProminent)
+        } else {
+            content
+        }
     }
 }
