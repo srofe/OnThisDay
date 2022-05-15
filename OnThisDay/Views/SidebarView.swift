@@ -10,14 +10,19 @@ struct SidebarView: View {
     @Binding var selection: EventType?
 
     var body: some View {
-        List(selection: $selection) {
-            Section("TODAY") {
-                ForEach(EventType.allCases, id: \.self) { type in
-                    Text(type.rawValue)
-                        .badge(showTotals ? appState.countFor(eventType: type) : 0)
+        VStack {
+            List(selection: $selection) {
+                Section("TODAY") {
+                    ForEach(EventType.allCases, id: \.self) { type in
+                        Text(type.rawValue)
+                            .badge(showTotals ? appState.countFor(eventType: type) : 0)
+                    }
                 }
             }
+            .listStyle(.sidebar)
+            Spacer()
+            DayPicker()
         }
-        .listStyle(.sidebar)
+        .frame(minWidth: 220)
     }
 }
