@@ -15,9 +15,9 @@ enum ViewMode: Int {
 
 struct ContentView: View {
     @EnvironmentObject var appState: AppState
-    @State private var eventType: EventType? = .events
-    @State private var searchText = ""
-    @State private var viewMode: ViewMode = .grid
+    @SceneStorage("eventType") var eventType: EventType?
+    @SceneStorage("searchText") var searchText = ""
+    @SceneStorage("viewMode") var viewMode: ViewMode = .grid
     var events: [Event] {
         appState.dataFor(eventType: eventType, searchText: searchText)
     }
@@ -49,7 +49,12 @@ struct ContentView: View {
         .toolbar(id: "mainToolbar") {
             Toolbar(viewMode: $viewMode)
         }
-            .searchable(text: $searchText)
+        .searchable(text: $searchText)
+        .onAppear {
+            if eventType == nil {
+                eventType = .events
+            }
+        }
     }
 }
 
