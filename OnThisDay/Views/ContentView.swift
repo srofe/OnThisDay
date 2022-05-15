@@ -11,8 +11,9 @@ import SwiftUI
 struct ContentView: View {
     @EnvironmentObject var appState: AppState
     @State private var eventType: EventType? = .events
+    @State private var searchText = ""
     var events: [Event] {
-        appState.dataFor(eventType: eventType)
+        appState.dataFor(eventType: eventType, searchText: searchText)
     }
     var windowTitle: String {
         if let eventType = eventType {
@@ -35,6 +36,10 @@ struct ContentView: View {
             idealHeight: 800,
             maxHeight: .infinity)
         .navigationTitle(windowTitle)
+        .toolbar(id: "mainToolbar") {
+            Toolbar()
+        }
+            .searchable(text: $searchText)
     }
 }
 
