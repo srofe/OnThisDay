@@ -8,15 +8,19 @@
 import SwiftUI
 
 struct TableView: View {
+    @State private var sortOrder = [KeyPathComparator(\Event.year)]
     var tableData: [Event]
+    var sortedTableData: [Event] {
+        tableData.sorted(using: sortOrder)
+    }
 
     var body: some View {
-        Table(tableData) {
-            TableColumn("Year") { item in
+        Table(sortedTableData, sortOrder: $sortOrder) {
+            TableColumn("Year", value: \.year) { item in
                 Text(item.year)
             }
             .width(min: 50, ideal: 60, max: 100)
-            TableColumn("Title") { item in
+            TableColumn("Title", value: \.text) { item in
                 Text(item.text)
             }
         }
