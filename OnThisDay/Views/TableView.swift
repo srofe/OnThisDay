@@ -9,13 +9,14 @@ import SwiftUI
 
 struct TableView: View {
     @State private var sortOrder = [KeyPathComparator(\Event.year)]
+    @State private var selectedEventID: UUID?
     var tableData: [Event]
     var sortedTableData: [Event] {
         tableData.sorted(using: sortOrder)
     }
 
     var body: some View {
-        Table(sortedTableData, sortOrder: $sortOrder) {
+        Table(sortedTableData, selection: $selectedEventID, sortOrder: $sortOrder) {
             TableColumn("Year", value: \.year) { item in
                 Text(item.year)
             }
