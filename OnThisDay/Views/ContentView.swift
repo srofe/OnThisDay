@@ -26,7 +26,11 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             SidebarView(selection: $eventType)
-            GridView(gridData: events)
+            VStack {
+                GridView(gridData: events)
+                Text("Total items: \(events.count)")
+                    .padding(.bottom, 8)
+            }
         }
         .frame(
             minWidth: 700,
