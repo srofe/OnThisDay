@@ -9,6 +9,7 @@ import SwiftUI
 
 struct DayPicker: View {
     @EnvironmentObject var appState: AppState
+    @SceneStorage("selectedDate") var selectedDate: String?
     @State private var month = "January"
     @State private var day = 1
     var maxDays: Int {
@@ -58,6 +59,7 @@ struct DayPicker: View {
         let monthIndex = appState.englishMonthNames.firstIndex(of: month) ?? 0
         let monthNumber = monthIndex + 1
         await appState.getDataFor(month: monthNumber, day: day)
+        selectedDate = "\(month) \(day)"
     }
 }
 
