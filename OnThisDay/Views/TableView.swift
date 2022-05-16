@@ -24,8 +24,8 @@ struct TableView: View {
     }
 
     var body: some View {
-        HStack {
-            VStack {
+        VStack {
+            HStack {
                 Table(sortedTableData, selection: $selectedEventID, sortOrder: $sortOrder) {
                     TableColumn("Year", value: \.year) { item in
                         Text(item.year)
@@ -35,20 +35,20 @@ struct TableView: View {
                         Text(item.text)
                     }
                 }
-                if showTotals {
-                    Text("\(sortedTableData.count) \(sortedTableData.count == 1 ? "entry" : "entries")")
-                        .padding(.bottom, 8)
+                if let selectedEvent = selectedEvent {
+                    EventView(event: selectedEvent)
+                        .frame(width: 250)
+                } else {
+                    Text("Select an event for more details...")
+                        .font(.title)
+                        .padding()
+                        .frame(width: 250)
                 }
             }
-            if let selectedEvent = selectedEvent {
-                EventView(event: selectedEvent)
-                    .frame(width: 250)
-            } else {
-                Text("Select an event for more details...")
-                    .font(.title)
-                    .padding()
-                    .frame(width: 250)
-            }
+        }
+        if showTotals {
+            Text("\(sortedTableData.count) \(sortedTableData.count == 1 ? "entry" : "entries")")
+                .padding(.bottom, 8)
         }
     }
 }
