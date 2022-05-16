@@ -12,7 +12,7 @@ struct PreferencesView: View {
                     Image(systemName: "checkmark.circle")
                     Text("Show")
                 }
-            Text("Tab 2 content here")
+            AppearanceView()
                 .tabItem {
                     Image(systemName: "sun.min")
                     Text("Appearance")
@@ -33,5 +33,18 @@ struct ShowView: View {
             Toggle("Show Deaths", isOn: $showDeaths)
             Toggle("Show Totals", isOn: $showTotals)
         }
+    }
+}
+
+struct AppearanceView: View {
+    @AppStorage("displayMode") var displayMode = DisplayMode.auto
+
+    var body: some View {
+        Picker("", selection: $displayMode) {
+            Text("Light").tag(DisplayMode.light)
+            Text("Dark").tag(DisplayMode.dark)
+            Text("Auto").tag(DisplayMode.auto)
+        }
+            .pickerStyle(.radioGroup)
     }
 }
