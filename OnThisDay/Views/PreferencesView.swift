@@ -7,7 +7,7 @@ import SwiftUI
 struct PreferencesView: View {
     var body: some View {
         TabView {
-            Text("Tab 1 content here")
+            ShowView()
                 .tabItem {
                     Image(systemName: "checkmark.circle")
                     Text("Show")
