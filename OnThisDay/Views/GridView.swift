@@ -1,4 +1,4 @@
-//
+   //
 //  GridView.swift
 //  OnThisDay
 //
@@ -29,7 +29,6 @@ struct GridView: View {
                     }
                 }
             }
-            .padding(.vertical)
             if showTotals {
                 Text("\(gridData.count) \(gridData.count == 1 ? "entry" : "entries")")
                     .padding(.bottom, 8)
