@@ -6,7 +6,18 @@ import SwiftUI
 
 struct PreferencesView: View {
     var body: some View {
-        Text("Hello, World!")
+        TabView {
+            Text("Tab 1 content here")
+                .tabItem {
+                    Image(systemName: "checkmark.circle")
+                    Text("Show")
+                }
+            Text("Tab 2 content here")
+                .tabItem {
+                    Image(systemName: "sun.min")
+                    Text("Appearance")
+                }
+        }
             .frame(width: 200, height: 150)
     }
 }
