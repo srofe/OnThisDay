@@ -21,3 +21,17 @@ struct PreferencesView: View {
             .frame(width: 200, height: 150)
     }
 }
+
+struct ShowView: View {
+    @AppStorage("showBirths") var showBirths = true
+    @AppStorage("showDeaths") var showDeaths = true
+    @AppStorage("showTotals") var showTotals = true
+
+    var body: some View {
+        VStack(alignment: .leading) {
+            Toggle("Show Births", isOn: $showBirths)
+            Toggle("Show Deaths", isOn: $showDeaths)
+            Toggle("Show Totals", isOn: $showTotals)
+        }
+    }
+}
