@@ -23,11 +23,18 @@ struct ContentView: View {
         appState.dataFor(eventType: eventType, date: selectedDate, searchText: searchText)
     }
     var windowTitle: String {
+        var title = "On This Day"
+
         if let eventType = eventType {
-            return "On This Day - \(eventType.rawValue)"
-        } else {
-            return "On This Day"
+            title += " - \(eventType.rawValue)"
         }
+        if let selcteddate = selectedDate {
+            title += " - \(selcteddate)"
+        } else {
+            title += " - Today"
+        }
+
+        return title
     }
 
     var body: some View {
