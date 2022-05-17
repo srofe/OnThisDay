@@ -60,7 +60,7 @@
 		685F0578C385D7BF5546C927 /* Toolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toolbar.swift; sourceTree = "<group>"; };
 		685F06F02A2815752DBBA0BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		685F07077A1375623F8EE0F3 /* OnThisDay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OnThisDay.entitlements; sourceTree = "<group>"; };
-		685F075F59946781F919D380 /* OnThisDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnThisDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		685F075F59946781F919D380 /* On This Day.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "On This Day.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		685F0773377D6C2B39D0289B /* OnThisDayApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnThisDayApp.swift; sourceTree = "<group>"; };
 		685F07D3EB8BE1B2A96A314B /* Networker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networker.swift; sourceTree = "<group>"; };
 		685F080B860BE352E8E7CCA0 /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
@@ -116,7 +116,7 @@
 		685F013FCA5E70CABC4CC805 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				685F075F59946781F919D380 /* OnThisDay.app */,
+				685F075F59946781F919D380 /* On This Day.app */,
 				685F01F0866603931E7C0CEB /* OnThisDayTests.xctest */,
 				685F0A3A5D5768A82530751A /* OnThisDayUITests.xctest */,
 			);
@@ -212,9 +212,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		685F06BBBCAF5C99FCE8948D /* OnThisDay */ = {
+		685F06BBBCAF5C99FCE8948D /* On This Day */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 685F07B636637CC72197D588 /* Build configuration list for PBXNativeTarget "OnThisDay" */;
+			buildConfigurationList = 685F07B636637CC72197D588 /* Build configuration list for PBXNativeTarget "On This Day" */;
 			buildPhases = (
 				685F0C7F7779370FB0ED6DD8 /* Sources */,
 				685F07BB72DC3D10C52F7DB8 /* Frameworks */,
@@ -224,9 +224,9 @@
 			);
 			dependencies = (
 			);
-			name = OnThisDay;
+			name = "On This Day";
 			productName = OnThisDay;
-			productReference = 685F075F59946781F919D380 /* OnThisDay.app */;
+			productReference = 685F075F59946781F919D380 /* On This Day.app */;
 			productType = "com.apple.product-type.application";
 		};
 		685F0BDE1809FDEB59CA7B8B /* OnThisDayTests */ = {
@@ -291,7 +291,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				685F06BBBCAF5C99FCE8948D /* OnThisDay */,
+				685F06BBBCAF5C99FCE8948D /* On This Day */,
 				685F0BDE1809FDEB59CA7B8B /* OnThisDayTests */,
 				685F0D5E46537AEDDBD78863 /* OnThisDayUITests */,
 			);
@@ -372,12 +372,12 @@
 /* Begin PBXTargetDependency section */
 		685F00CD51FE6206F8778EAE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 685F06BBBCAF5C99FCE8948D /* OnThisDay */;
+			target = 685F06BBBCAF5C99FCE8948D /* On This Day */;
 			targetProxy = 685F0838D44FC0F942A45E50 /* PBXContainerItemProxy */;
 		};
 		685F0BA781285D8E0E9DF9A7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 685F06BBBCAF5C99FCE8948D /* OnThisDay */;
+			target = 685F06BBBCAF5C99FCE8948D /* On This Day */;
 			targetProxy = 685F0BD092E727986AD246BE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -611,7 +611,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		685F07B636637CC72197D588 /* Build configuration list for PBXNativeTarget "OnThisDay" */ = {
+		685F07B636637CC72197D588 /* Build configuration list for PBXNativeTarget "On This Day" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				685F0D84F53CC6D0E1417791 /* Debug */,
